@@ -33,6 +33,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec-steps'
   spec.add_development_dependency 'factory_girl_rails'
   spec.add_development_dependency 'sqlite3'
+  spec.add_development_dependency 'puma'
 
   # Keep linter-rubocop happy
   spec.add_development_dependency 'rubocop'
