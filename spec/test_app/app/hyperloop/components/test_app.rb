@@ -9,14 +9,16 @@ class TestComp < Hyperloop::Component
         end
       end
     end
-    if TodoItem.all.count == 0
-      DIV { "No Todos" }
-    else
-      UL do
-        TodoItem.each do |todo|
-          LI { "#{todo.title}" }
+    DIV do
+      if TodoItem.all.count == 0
+        DIV { "No Todos" }
+      else
+        UL do
+          TodoItem.each do |todo|
+            LI { "#{todo.title}" }
+          end
         end
       end
-    end
+    end.while_loading { 'loading...' }
   end
 end

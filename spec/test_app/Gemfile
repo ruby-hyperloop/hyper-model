@@ -12,7 +12,6 @@ gem 'puma', '~> 3.6.0'
 gem 'jquery-rails'
 
 gem 'hyper-model',     path: '../..'
-gem 'hyper-mesh',      path: '../../../hyper-mesh'
 
 gem 'hyper-spec', git: 'https://www.github.com/ruby-hyperloop/hyper-spec'
 gem 'opal', '~> 0.10.0'

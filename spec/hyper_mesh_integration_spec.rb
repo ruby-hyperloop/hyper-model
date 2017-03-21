@@ -10,4 +10,11 @@ describe 'HyperMesh Integration', js: true do
     SendToAll(message: "Hello!")
     expect(page).to have_content('Hello!')
   end
+
+  it "can use Hyperloop::Model.load" do
+    todo = FactoryGirl.create(:todo_item, title: 'another todo')
+    expect_promise do
+      Hyperloop::Model.load { TodoItem.find_by_title('another todo') }.then { |todo| todo.id }
+    end.to eq(todo.id)
+  end
 end

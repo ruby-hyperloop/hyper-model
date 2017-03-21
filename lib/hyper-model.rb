@@ -6,6 +6,7 @@ Hyperloop.import 'hyper-model'
 
 if RUBY_ENGINE == 'opal'
   require 'hyper-mesh'
+  require 'hyperloop/model/load'
 else
   require 'opal'
   require 'hyper-mesh'
