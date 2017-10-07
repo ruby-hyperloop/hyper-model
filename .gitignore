@@ -40,3 +40,9 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# ingore gems
+*.gem
+
+# ignore Idea
+.idea
