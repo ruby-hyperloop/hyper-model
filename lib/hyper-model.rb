@@ -1,4 +1,4 @@
-require "hyperloop/model/version"
+require 'hyperloop/model/version'
 require 'hyperloop-config'
 
 Hyperloop.import 'hyper-component'
