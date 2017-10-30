@@ -7,7 +7,7 @@ describe 'HyperMesh Integration', js: true do
     expect(page).to have_content('No Messages')
     FactoryGirl.create(:todo_item, title: 'my first todo')
     expect(page).to have_content('my first todo')
-    SendToAll(message: "Hello!")
+    SendToAll.run(message: "Hello!")
     expect(page).to have_content('Hello!')
   end
 
