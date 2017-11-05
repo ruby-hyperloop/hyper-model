@@ -17,7 +17,7 @@ gem 'hyper-spec'
 gem 'opal', '~> 0.10.0'
 gem 'opal-browser'
 gem 'opal-jquery'
-gem 'therubyracer', platforms: :ruby
+gem 'mini_racer', platforms: :ruby
 gem 'react-rails', '~> 2.3.1'
 gem 'opal-rails', '~> 0.9.3'
 
