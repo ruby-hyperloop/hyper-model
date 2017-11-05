@@ -18,11 +18,11 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'hyper-mesh', '0.15.0-autobahn-a6'
+  spec.add_dependency 'hyper-mesh', '0.15.0-autobahn-a8'
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'database_cleaner'
   spec.add_development_dependency 'factory_girl_rails'
-  spec.add_development_dependency 'hyper-spec', '0.15.0-autobahn-a6'
+  spec.add_development_dependency 'hyper-spec', '0.15.0-autobahn-a8'
   spec.add_development_dependency 'listen'
   spec.add_development_dependency 'opal'
   spec.add_development_dependency 'opal-browser'
