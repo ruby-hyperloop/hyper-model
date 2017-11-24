@@ -46,3 +46,5 @@ bower.json
 
 # ignore Idea
 .idea
+.vscode
+Gemfile.lock
