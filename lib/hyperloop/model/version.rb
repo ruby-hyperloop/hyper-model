@@ -1,5 +1,5 @@
 module Hyperloop
   module Model
-    VERSION = '0.15.0-sachsenring-lap5'
+    VERSION = '1.0.0-lap6'
   end
 end
