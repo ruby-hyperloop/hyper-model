@@ -2,8 +2,6 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'hyperloop/model/version'
-require '../hyperloop/lib/hyperloop/version'
-GEM_VERSION = Hyperloop::VERSION
 
 Gem::Specification.new do |spec|
   spec.name          = 'hyper-model'
@@ -28,17 +26,17 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'hyper-mesh', GEM_VERSION
+  spec.add_dependency 'hyper-mesh', Hyperloop::Model::VERSION
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'database_cleaner'
   spec.add_development_dependency 'factory_girl_rails'
-  spec.add_development_dependency 'hyper-spec', GEM_VERSION
+  spec.add_development_dependency 'hyper-spec', Hyperloop::Model::VERSION
   spec.add_development_dependency 'listen'
   spec.add_development_dependency 'opal', '~> 0.10.5'
   spec.add_development_dependency 'opal-browser', '~> 0.2.0'
   spec.add_development_dependency 'opal-rails', '~> 0.9.3'
   spec.add_development_dependency 'puma'
-  spec.add_development_dependency 'rails', '~> 5.1.4'
+  spec.add_development_dependency 'rails', '>= 4.0.0'
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'react-rails', '>= 2.3.0', '< 2.5.0'
   spec.add_development_dependency 'rspec', '~> 3.7.0'
