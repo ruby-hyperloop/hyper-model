@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'hyper-mesh', Hyperloop::Model::VERSION
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'database_cleaner'
-  spec.add_development_dependency 'factory_girl_rails'
+  spec.add_development_dependency 'factory_bot_rails'
   spec.add_development_dependency 'hyper-spec', Hyperloop::Model::VERSION
   spec.add_development_dependency 'listen'
   spec.add_development_dependency 'opal', '~> 0.10.5'

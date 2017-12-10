@@ -10,7 +10,7 @@ require 'rspec-steps'
 require 'hyper-operation'
 
 require 'database_cleaner'
-require 'factory_girl_rails'
+require 'factory_bot_rails'
 require 'puma'
 
 RSpec.configure do |config|

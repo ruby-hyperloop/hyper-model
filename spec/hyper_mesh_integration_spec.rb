@@ -5,14 +5,14 @@ describe 'HyperMesh Integration', js: true do
     mount "TestComp"
     expect(page).to have_content('No Todos')
     expect(page).to have_content('No Messages')
-    FactoryGirl.create(:todo_item, title: 'my first todo')
+    FactoryBot.create(:todo_item, title: 'my first todo')
     expect(page).to have_content('my first todo')
     SendToAll.run(message: "Hello!")
     expect(page).to have_content('Hello!')
   end
 
   it "can use Hyperloop::Model.load" do
-    todo = FactoryGirl.create(:todo_item, title: 'another todo')
+    todo = FactoryBot.create(:todo_item, title: 'another todo')
     expect_promise do
       Hyperloop::Model.load { TodoItem.find_by_title('another todo') }.then { |todo| todo.id }
     end.to eq(todo.id)
