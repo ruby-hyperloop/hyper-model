@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'factory_bot_rails'
   spec.add_development_dependency 'hyper-spec', Hyperloop::Model::VERSION
   spec.add_development_dependency 'listen'
-  spec.add_development_dependency 'opal', '~> 0.10.5'
+  spec.add_development_dependency 'opal', '>= 0.10.5', '< 0.12.0'
   spec.add_development_dependency 'opal-browser', '~> 0.2.0'
   spec.add_development_dependency 'opal-rails', '~> 0.9.3'
   spec.add_development_dependency 'puma'
