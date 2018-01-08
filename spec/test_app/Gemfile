@@ -9,14 +9,12 @@ end
 gem 'rails', '~> 5.1.4'
 gem 'sqlite3'
 gem 'puma'
-gem 'jquery-rails'
 
 gem 'hyper-model', path: '../..'
 
 gem 'hyper-spec'
 gem 'opal', '~> 0.10.0'
 gem 'opal-browser'
-gem 'opal-jquery'
 gem 'mini_racer', platforms: :ruby
 gem 'react-rails', '>= 2.3.0', '< 2.5.0'
 gem 'opal-rails', '~> 0.9.3'
